@@ -2,7 +2,7 @@ name: HStarDigital
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *' 
   workflow_dispatch:
 
 permissions:
@@ -47,29 +47,23 @@ jobs:
                   line = line.strip()
                   
                   if line.startswith('#EXTINF:'):
-                      # নাম এক্সট্রাক্ট করা (কমা (,) এর পরের অংশ)
                       if ',' in line:
                           current_name = line.split(',')[-1].strip()
                       
-                      # tvg-logo এক্সট্রাক্ট করা
                       logo_match = re.search(r'tvg-logo=\"([^\"]+)\"', line)
                       current_logo = logo_match.group(1) if logo_match else ''
                   
                   elif 'http-cookie=' in line or 'Cookie:' in line:
-                      # কুকি ভ্যালু এক্সট্রাক্ট করা
                       cookie_match = re.search(r'(?:http-cookie=|Cookie:\s*\")(hdntl=[^\"]+)', line, re.IGNORECASE)
                       if cookie_match:
                           current_cookie = cookie_match.group(1)
                       else:
-                          # যদি কোটেশন ছাড়া বা অন্য ফরম্যাটে থাকে
                           parts = line.split('cookie=', 1)
                           if len(parts) > 1:
                               current_cookie = parts[1].split('&')[0].strip('\"{}')
                   
                   elif line.startswith('http'):
                       raw_url = line
-                      
-                      # ইউআরএল থেকে পাইপ (|) বা এক্সট্রা প্যারামিটার আলাদা করা এবং কুকি রিট্রিভ করা
                       mpd_url = raw_url
                       cookie_val = current_cookie
                       
@@ -81,7 +75,6 @@ jobs:
                                       cookie_val = p.split('=', 1)[1]
                                       break
                       
-                      # যদি কুকি এখনো না পাওয়া যায়, তবে এমপিডি ইউআরএলের কোয়েরি অংশ থেকেhdntl বের করার চেষ্টা
                       if not cookie_val and 'hdntl=' in mpd_url:
                           match_hd = re.search(r'(hdntl=[^&]+)', mpd_url)
                           if match_hd:
@@ -99,15 +92,24 @@ jobs:
                       }
                       channels.append(channel_entry)
                       
-                      # রিসেট এবং কাউন্টার বৃদ্ধি
                       channel_counter += 1
                       current_name = ''
                       current_logo = ''
                       current_cookie = ''
 
+              # ১. মূল HStarDigital/HStarDigital.json ফাইল সেভ করা
               with open('HStarDigital/HStarDigital.json', 'w', encoding='utf-8') as f:
                   json.dump(channels, f, indent=4, ensure_ascii=False)
-              print('Successfully updated HStarDigital/HStarDigital.json')
+
+              # ২. একই ফোল্ডারে শুধু কুকি সহ HStarDigital/cookie.json ফাইল সেভ করা
+              first_cookie = channels[0]['cookie'] if channels and 'cookie' in channels[0] else ''
+              cookie_data = {
+                  'cookie': first_cookie
+              }
+              with open('HStarDigital/cookie.json', 'w', encoding='utf-8') as f:
+                  json.dump(cookie_data, f, indent=4, ensure_ascii=False)
+
+              print('Successfully updated HStarDigital JSON files')
           except Exception as e:
               print(f'Error processing M3U data: {e}')
               exit(1)
@@ -117,5 +119,5 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add HStarDigital/HStarDigital.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update HStarDigital.json every 1 hour" && git push)
+          git add HStarDigital/HStarDigital.json HStarDigital/cookie.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update HStarDigital json files every 1 hour" && git push)
