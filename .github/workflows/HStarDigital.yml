@@ -1,0 +1,121 @@
+name: HStarDigital
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Fetch and Parse M3U to JSON
+        env:
+          HStarDigital_URL: ${{ secrets.HSTARDIGITAL_URL }}
+        run: |
+          mkdir -p HStarDigital
+          python -c "
+          import urllib.request, os, re, json
+
+          url = os.environ['HStarDigital_URL']
+          req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+          
+          try:
+              with urllib.request.urlopen(req) as response:
+                  m3u_content = response.read().decode('utf-8')
+              
+              lines = m3u_content.splitlines()
+              channels = []
+              
+              current_name = ''
+              current_logo = ''
+              current_cookie = ''
+              channel_counter = 1
+              
+              for line in lines:
+                  line = line.strip()
+                  
+                  if line.startswith('#EXTINF:'):
+                      # নাম এক্সট্রাক্ট করা (কমা (,) এর পরের অংশ)
+                      if ',' in line:
+                          current_name = line.split(',')[-1].strip()
+                      
+                      # tvg-logo এক্সট্রাক্ট করা
+                      logo_match = re.search(r'tvg-logo=\"([^\"]+)\"', line)
+                      current_logo = logo_match.group(1) if logo_match else ''
+                  
+                  elif 'http-cookie=' in line or 'Cookie:' in line:
+                      # কুকি ভ্যালু এক্সট্রাক্ট করা
+                      cookie_match = re.search(r'(?:http-cookie=|Cookie:\s*\")(hdntl=[^\"]+)', line, re.IGNORECASE)
+                      if cookie_match:
+                          current_cookie = cookie_match.group(1)
+                      else:
+                          # যদি কোটেশন ছাড়া বা অন্য ফরম্যাটে থাকে
+                          parts = line.split('cookie=', 1)
+                          if len(parts) > 1:
+                              current_cookie = parts[1].split('&')[0].strip('\"{}')
+                  
+                  elif line.startswith('http'):
+                      raw_url = line
+                      
+                      # ইউআরএল থেকে পাইপ (|) বা এক্সট্রা প্যারামিটার আলাদা করা এবং কুকি রিট্রিভ করা
+                      mpd_url = raw_url
+                      cookie_val = current_cookie
+                      
+                      if '|' in raw_url:
+                          mpd_url, params = raw_url.split('|', 1)
+                          if 'cookie=' in params:
+                              for p in params.split('&'):
+                                  if p.startswith('cookie='):
+                                      cookie_val = p.split('=', 1)[1]
+                                      break
+                      
+                      # যদি কুকি এখনো না পাওয়া যায়, তবে এমপিডি ইউআরএলের কোয়েরি অংশ থেকেhdntl বের করার চেষ্টা
+                      if not cookie_val and 'hdntl=' in mpd_url:
+                          match_hd = re.search(r'(hdntl=[^&]+)', mpd_url)
+                          if match_hd:
+                              cookie_val = match_hd.group(1)
+
+                      id_str = f'{channel_counter:03d}'
+
+                      channel_entry = {
+                          'id': id_str,
+                          'name': current_name,
+                          'logo': current_logo,
+                          'clearkey': '',
+                          'mpd': mpd_url,
+                          'cookie': cookie_val
+                      }
+                      channels.append(channel_entry)
+                      
+                      # রিসেট এবং কাউন্টার বৃদ্ধি
+                      channel_counter += 1
+                      current_name = ''
+                      current_logo = ''
+                      current_cookie = ''
+
+              with open('HStarDigital/HStarDigital.json', 'w', encoding='utf-8') as f:
+                  json.dump(channels, f, indent=4, ensure_ascii=False)
+              print('Successfully updated HStarDigital/HStarDigital.json')
+          except Exception as e:
+              print(f'Error processing M3U data: {e}')
+              exit(1)
+          "
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add HStarDigital/HStarDigital.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update HStarDigital.json every 1 hour" && git push)
