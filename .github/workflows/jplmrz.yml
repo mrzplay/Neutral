@@ -2,7 +2,7 @@ name: JplMrz
 
 on:
   schedule:
-    - cron: '0 * * * *' 
+    - cron: '0 * * * *' # Proti 1 ghonta por por run hobe
   workflow_dispatch:
 
 permissions:
@@ -29,13 +29,17 @@ jobs:
           import urllib.request, os, json
 
           url = os.environ['JPLMRZ']
-          req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+          # Headers add kora hoyeche jate 406 error na ase
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept': 'application/json, text/plain, */*'
+          }
+          req = urllib.request.Request(url, headers=headers)
           
           try:
               with urllib.request.urlopen(req) as response:
                   raw_data = response.read().decode('utf-8')
               
-              # সোর্স থেকে যেভাবে ডেটা আসছে, পার্স করে আবার সুন্দর ফরম্যাটে সেভ করা হচ্ছে
               parsed_data = json.loads(raw_data)
 
               with open('JplMrz/JplMrz.json', 'w', encoding='utf-8') as f:
