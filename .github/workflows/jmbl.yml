@@ -1,0 +1,70 @@
+name: JMBL
+
+on:
+  schedule:
+    - cron: '0 * * * *' 
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Fetch and Save JSON
+        env:
+          JMBL_URL: ${{ secrets.JMBL_URL }}
+        run: |
+          mkdir -p JMBL
+          python -c "
+          import urllib.request, os, json
+
+          url = os.environ['JMBL_URL']
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept': 'application/json, text/plain, */*'
+          }
+          req = urllib.request.Request(url, headers=headers)
+          
+          try:
+              with urllib.request.urlopen(req) as response:
+                  raw_data = response.read().decode('utf-8')
+              
+              # সোর্স থেকে আসা ডেটা পার্স করা
+              parsed_data = json.loads(raw_data)
+              
+              # কুকি ভек্সট্রাক্ট করা (সরাসরি অবজেক্ট বা লিস্ট হ্যান্ডেল করার জন্য)
+              cookie_value = ''
+              if isinstance(parsed_data, list) and len(parsed_data) > 0:
+                  cookie_value = parsed_data[0].get('cookie', '')
+              elif isinstance(parsed_data, dict):
+                  cookie_value = parsed_data.get('cookie', '')
+
+              # কাঙ্ক্ষিত আউটপুট ফরম্যাট তৈরি
+              output_data = {
+                  'cookie': cookie_value
+              }
+
+              with open('JMBL/jmbl.json', 'w', encoding='utf-8') as f:
+                  json.dump(output_data, f, indent=4, ensure_ascii=False)
+              print('Successfully updated JMBL/jmbl.json')
+          except Exception as e:
+              print(f'Error fetching or saving JSON: {e}')
+              exit(1)
+          "
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add JMBL/jmbl.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update jmbl.json every 1 hour" && git push)
