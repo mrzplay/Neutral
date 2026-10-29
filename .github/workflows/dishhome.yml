@@ -1,0 +1,78 @@
+name: DishHome
+
+on:
+  schedule:
+    - cron: '0 * * * *' # প্রতি ১ ঘণ্টা পর পর রান হবে
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Fetch and Parse DishHome JSON
+        env:
+          DISHHOME: ${{ secrets.DISHHOME }}
+        run: |
+          mkdir -p DishHome
+          python -c "
+          import urllib.request, os, json
+
+          url = os.environ['DISHHOME']
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept': 'application/json, text/plain, */*'
+          }
+          req = urllib.request.Request(url, headers=headers)
+          
+          try:
+              with urllib.request.urlopen(req) as response:
+                  raw_data = response.read().decode('utf-8')
+              
+              source_data = json.loads(raw_data)
+              channels_list = []
+
+              # সোর্স ডেটা যদি লিস্ট অফ ক্যাটাগরি হয়
+              if isinstance(source_data, list):
+                  for category in source_data:
+                      if isinstance(category, dict) and 'channels' in category:
+                          for ch in category['channels']:
+                              mpd_url = ch.get('url', '')
+                              # ফিল্টার নিশ্চিত করা যাতে ottlive.dishhome.com.np থাকে
+                              if 'ottlive.dishhome.com.np' in mpd_url:
+                                  ck_id = ch.get('clearKeyId', '')
+                                  ck_key = ch.get('clearKey', '')
+                                  clearkey_val = f'{ck_id}:{ck_key}' if ck_id and ck_key else ''
+
+                                  channel_entry = {
+                                      'id': str(ch.get('id', '')),
+                                      'name': ch.get('name', ''),
+                                      'clearkey': clearkey_val,
+                                      'mpd': mpd_url
+                                  }
+                                  channels_list.append(channel_entry)
+
+              with open('DishHome/dishhome.json', 'w', encoding='utf-8') as f:
+                  json.dump(channels_list, f, indent=4, ensure_ascii=False)
+              print('Successfully updated DishHome/dishhome.json')
+          except Exception as e:
+              print(f'Error processing JSON: {e}')
+              exit(1)
+          "
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add DishHome/dishhome.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update dishhome.json every 1 hour" && git push)
