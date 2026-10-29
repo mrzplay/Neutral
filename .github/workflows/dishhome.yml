@@ -2,7 +2,7 @@ name: DishHome
 
 on:
   schedule:
-    - cron: '0 * * * *' # প্রতি ১ ঘণ্টা পর পর রান হবে
+    - cron: '0 * * * *' # Proti 1 ghonta por por run hobe
   workflow_dispatch:
 
 permissions:
@@ -39,66 +39,48 @@ jobs:
               with urllib.request.urlopen(req) as response:
                   raw_data = response.read().decode('utf-8')
               
-              print('API Raw Data Sample:', raw_data[:300]) # ডিবাগিংয়ের জন্য প্রথম ৩০০ ক্যারেক্টার প্রিন্ট করবে
               source_data = json.loads(raw_data)
               channels_list = []
 
-              # যদি সোর্স ডেটা ডিরেক্ট লিস্ট হয়
+              # Helper function to process item
+              def process_channel(ch):
+                  mpd_url = ch.get('url', '')
+                  # Shudhu matro ottlive.dishhome.com.np thaklei add hobe
+                  if 'ottlive.dishhome.com.np' in mpd_url:
+                      ck_id = ch.get('clearKeyId', '')
+                      ck_key = ch.get('clearKey', '')
+                      clearkey_val = f'{ck_id}:{ck_key}' if ck_id and ck_key else ''
+
+                      channel_entry = {
+                          'id': str(ch.get('id', '')),
+                          'name': ch.get('name', ''),
+                          'clearkey': clearkey_val,
+                          'mpd': mpd_url
+                      }
+                      channels_list.append(channel_entry)
+
               if isinstance(source_data, list):
                   for item in source_data:
                       if isinstance(item, dict):
                           if 'channels' in item and isinstance(item['channels'], list):
                               for ch in item['channels']:
-                                  mpd_url = ch.get('url', '')
-                                  ck_id = ch.get('clearKeyId', '')
-                                  ck_key = ch.get('clearKey', '')
-                                  clearkey_val = f'{ck_id}:{ck_key}' if ck_id and ck_key else ''
-
-                                  channel_entry = {
-                                      'id': str(ch.get('id', '')),
-                                      'name': ch.get('name', ''),
-                                      'clearkey': clearkey_val,
-                                      'mpd': mpd_url
-                                  }
-                                  channels_list.append(channel_entry)
-              # যদি সোর্স ডেটা ডিকশনারি (অবজেক্ট) হয় এবং তার ভেতরে লিস্ট থাকে
+                                  process_channel(ch)
+                          elif 'url' in item:
+                              process_channel(item)
               elif isinstance(source_data, dict):
-                  # যদি সরাসরি dishhome এর নিজস্ব কোনো ফরম্যাট বা চাবি থাকে
                   for key, val in source_data.items():
                       if isinstance(val, list):
                           for item in val:
                               if isinstance(item, dict):
                                   if 'channels' in item and isinstance(item['channels'], list):
                                       for ch in item['channels']:
-                                          mpd_url = ch.get('url', '')
-                                          ck_id = ch.get('clearKeyId', '')
-                                          ck_key = ch.get('clearKey', '')
-                                          clearkey_val = f'{ck_id}:{ck_key}' if ck_id and ck_key else ''
-
-                                          channel_entry = {
-                                              'id': str(ch.get('id', '')),
-                                              'name': ch.get('name', ''),
-                                              'clearkey': clearkey_val,
-                                              'mpd': mpd_url
-                                          }
-                                          channels_list.append(channel_entry)
+                                          process_channel(ch)
                                   elif 'url' in item:
-                                      mpd_url = item.get('url', '')
-                                      ck_id = item.get('clearKeyId', '')
-                                      ck_key = item.get('clearKey', '')
-                                      clearkey_val = f'{ck_id}:{ck_key}' if ck_id and ck_key else ''
-
-                                      channel_entry = {
-                                          'id': str(item.get('id', '')),
-                                          'name': item.get('name', ''),
-                                          'clearkey': clearkey_val,
-                                          'mpd': mpd_url
-                                      }
-                                      channels_list.append(channel_entry)
+                                      process_channel(item)
 
               with open('DishHome/dishhome.json', 'w', encoding='utf-8') as f:
                   json.dump(channels_list, f, indent=4, ensure_ascii=False)
-              print(f'Successfully updated DishHome/dishhome.json with {len(channels_list)} channels')
+              print(f'Successfully updated DishHome/dishhome.json with {len(channels_list)} filtered channels')
           except Exception as e:
               print(f'Error processing JSON: {e}')
               exit(1)
@@ -109,4 +91,4 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add DishHome/dishhome.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update dishhome.json" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update dishhome.json with filtered urls" && git push)
