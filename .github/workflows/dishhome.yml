@@ -2,7 +2,7 @@ name: DishHome
 
 on:
   schedule:
-    - cron: '0 * * * *' # Proti 1 ghonta por por run hobe
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 permissions:
