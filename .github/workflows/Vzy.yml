@@ -1,0 +1,98 @@
+name: Vzy
+
+on:
+  schedule:
+    - cron: '0 * * * *' 
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Fetch and Parse M3U to JSON
+        env:
+          VZY_URL: ${{ secrets.VZY_URL }}
+        run: |
+          mkdir -p Vzy
+          python -c "
+          import urllib.request, os, re, json
+
+          url = os.environ['VZY_URL']
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept': 'application/json, text/plain, */*'
+          }
+          req = urllib.request.Request(url, headers=headers)
+          
+          try:
+              with urllib.request.urlopen(req) as response:
+                  m3u_content = response.read().decode('utf-8')
+              
+              lines = m3u_content.splitlines()
+              channels = []
+              
+              current_id = ''
+              current_name = ''
+              current_logo = ''
+              current_clearkey = ''
+              channel_counter = 1
+              
+              for line in lines:
+                  line = line.strip()
+                  if line.startswith('#EXTINF:'):
+                      id_match = re.search(r'tvg-id=\"([^\"]+)\"', line)
+                      current_id = id_match.group(1) if id_match and id_match.group(1).strip() else ''
+                      
+                      logo_match = re.search(r'tvg-logo=\"([^\"]+)\"', line)
+                      current_logo = logo_match.group(1) if logo_match else ''
+                      
+                      if ',' in line:
+                          current_name = line.split(',')[-1].strip()
+                  
+                  elif line.startswith('#KODIPROP:inputstream.adaptive.license_key='):
+                      current_clearkey = line.split('=', 1)[1].strip()
+                  
+                  elif line.startswith('http'):
+                      mpd_url = line
+                      final_id = current_id if current_id else f'{channel_counter:03d}'
+
+                      channel_entry = {
+                          'id': final_id,
+                          'name': current_name,
+                          'logo': current_logo,
+                          'clearkey': current_clearkey,
+                          'mpd': mpd_url
+                      }
+                      channels.append(channel_entry)
+                      
+                      channel_counter += 1
+                      current_id = ''
+                      current_name = ''
+                      current_logo = ''
+                      current_clearkey = ''
+
+              with open('Vzy/vzy.json', 'w', encoding='utf-8') as f:
+                  json.dump(channels, f, indent=4, ensure_ascii=False)
+              print('Successfully updated Vzy/vzy.json')
+          except Exception as e:
+              print(f'Error processing M3U data: {e}')
+              exit(1)
+          "
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add Vzy/vzy.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update vzy.json every 1 hour" && git push)
