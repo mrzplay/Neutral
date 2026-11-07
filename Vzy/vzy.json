@@ -16,7 +16,7 @@
     {
         "id": "9487075",
         "name": "9X Jalwa",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/8491c65655254b77b4add3e83423c855/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/bab798478e714be3a5ae861fc04606f0/version/0",
         "clearkey": "",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/9X_Jalwa/hls_fta/9X_Jalwa.m3u8"
     },
@@ -30,7 +30,7 @@
     {
         "id": "9487073",
         "name": "9X Tashan",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/83e396d9b57944daab86fb1dc4fc248e/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/2481ada1cd354fe3a5b6abed499a2191/version/0",
         "clearkey": "",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/9X_Tashan/hls_fta/9X_Tashan.m3u8"
     },
@@ -163,7 +163,7 @@
     {
         "id": "9487052",
         "name": "Zee Action",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/1939be35954742989bd03c0108a64f4c/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/34108078d7874122b00072cb48a6968a/version/0",
         "clearkey": "b1d7f31ce857468b91b8ebfe13de0c7e:a85748fed144d26ecfd4b08c1296259b",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Action/dash/Zee_Action.mpd"
     },
@@ -327,5 +327,12 @@
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/8ec419e798e644fca91ae4e11f182a1c/version/0",
         "clearkey": "5791aecb8f52486f85836c565a114d9e:1e292d7b3f6d1c649e8e7d3123df40d6",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zing/dash/Zing.mpd"
+    },
+    {
+        "id": "9487084",
+        "name": "Zoom",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f84de3464c0a4609ac222605bd3b3bfe/version/0",
+        "clearkey": "3a54cd2c1dfd4aa49d2cd8b3a1ccc6f2:4b692bca861d886e46090a92c0726b28",
+        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zoom/dash/Zoom.mpd"
     }
 ]
