@@ -52,7 +52,7 @@
         "id": "9624883",
         "name": "Big Magic",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/a4225f7d32c549638e3c8926a78079e6/version/0",
-        "clearkey": "00256a16ae4f4c53bef216563c52e339:60fe38cd4dadcc0171cd38519ca2d9d7",
+        "clearkey": "00256a16ae4f4c53bef216563c52e339:b1d12377aa0ea9de68226e028e07dccc",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Big_Magic/dash/Big_Magic.mpd"
     },
     {
@@ -149,7 +149,7 @@
     {
         "id": "9487082",
         "name": "Wion",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/938610751fea47dbbaa97beae47fdc12/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/11d3678b209d426688a88adc01830f1d/version/0",
         "clearkey": "8ac2c870871f4f53866f834b81f61f1d:53a5aafb16e5e7531e5e2bc1f1f5fda5",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Wion/dash/Wion.mpd"
     },
@@ -205,7 +205,7 @@
     {
         "id": "9487104",
         "name": "Zee Bollywood",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/e1de996d54864c78b8daf60d63974223/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/e05e21a01b244152819c56ff0d98e091/version/0",
         "clearkey": "1d152fbf1afd4f6fb178c2d2a7984e9e:411fa0fedc0f9c5869c20b9318f77088",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Bollywood/dash/Zee_Bollywood.mpd"
     },
