@@ -1,0 +1,117 @@
+name: JMblive
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Fetch and Parse M3U to JSON
+        env:
+          JMBLIVE_URL: ${{ secrets.JMBLIVE_URL }}
+        run: |
+          mkdir -p JMblive
+          python -c "
+          import urllib.request, os, re, json
+
+          url = os.environ['JMBLIVE_URL']
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept': 'application/json, text/plain, */*'
+          }
+          req = urllib.request.Request(url, headers=headers)
+          
+          try:
+              with urllib.request.urlopen(req) as response:
+                  m3u_content = response.read().decode('utf-8')
+              
+              lines = m3u_content.splitlines()
+              channels = []
+              
+              current_id = ''
+              current_name = ''
+              current_logo = ''
+              current_clearkey = ''
+              current_cookie = ''
+              
+              for line in lines:
+                  line = line.strip()
+                  if line.startswith('#EXTINF:'):
+                      # tvg-id এক্সট্রাক্ট করা
+                      id_match = re.search(r'tvg-id=\"([^\"]+)\"', line)
+                      current_id = id_match.group(1) if id_match and id_match.group(1).strip() else ''
+                      
+                      # tvg-logo এক্সট্রাক্ট করা
+                      logo_match = re.search(r'tvg-logo=\"([^\"]+)\"', line)
+                      current_logo = logo_match.group(1) if logo_match else ''
+                      
+                      # চ্যানেলের নাম (কমা (,) এর পরের অংশ)
+                      if ',' in line:
+                          current_name = line.split(',')[-1].strip()
+                  
+                  elif line.startswith('#KODIPROP:inputstream.adaptive.license_key='):
+                      current_clearkey = line.split('=', 1)[1].strip()
+                  
+                  elif 'Cookie=' in line or 'http-cookie=' in line:
+                     
+                      cookie_match = re.search(r'(?:Cookie=|http-cookie=)(__hdnea__=[^&\"]+)', line, re.IGNORECASE)
+                      if cookie_match:
+                          current_cookie = cookie_match.group(1)
+                  
+                  elif line.startswith('http'):
+                      mpd_url = line
+                      
+                    
+                      if 'jiotvmblive.cdn.jio.com' in mpd_url:
+                          # যদি কুকি ওপরের লাইনে না পাওয়া যায়, তবে এমপিডি লিংক থেকে খোঁজা
+                          cookie_val = current_cookie
+                          if not cookie_val and '__hdnea__=' in mpd_url:
+                              match_hd = re.search(r'(__hdnea__=[^&\s]+)', mpd_url)
+                              if match_hd:
+                                  cookie_val = match_hd.group(1)
+
+                          channel_entry = {
+                              'id': current_id,
+                              'name': current_name,
+                              'logo': current_logo,
+                              'clearkey': current_clearkey,
+                              'mpd': mpd_url,
+                              'cookie': cookie_val
+                          }
+                          channels.append(channel_entry)
+                      
+                      # পরবর্তী চ্যানেলের জন্য রিসেট করা
+                      current_id = ''
+                      current_name = ''
+                      current_logo = ''
+                      current_clearkey = ''
+                      current_cookie = ''
+
+              with open('JMblive/jmblive.json', 'w', encoding='utf-8') as f:
+                  json.dump(channels, f, indent=4, ensure_ascii=False)
+              print(f'Successfully updated JMblive/jmblive.json with {len(channels)} channels')
+          except Exception as e:
+              print(f'Error processing M3U data: {e}')
+              exit(1)
+          "
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add JMblive/jmblive.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update jmblive.json every 1 hour" && git push)
