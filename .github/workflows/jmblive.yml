@@ -51,15 +51,12 @@ jobs:
               for line in lines:
                   line = line.strip()
                   if line.startswith('#EXTINF:'):
-                      # tvg-id এক্সট্রাক্ট করা
                       id_match = re.search(r'tvg-id=\"([^\"]+)\"', line)
                       current_id = id_match.group(1) if id_match and id_match.group(1).strip() else ''
                       
-                      # tvg-logo এক্সট্রাক্ট করা
                       logo_match = re.search(r'tvg-logo=\"([^\"]+)\"', line)
                       current_logo = logo_match.group(1) if logo_match else ''
                       
-                      # চ্যানেলের নাম (কমা (,) এর পরের অংশ)
                       if ',' in line:
                           current_name = line.split(',')[-1].strip()
                   
@@ -67,7 +64,6 @@ jobs:
                       current_clearkey = line.split('=', 1)[1].strip()
                   
                   elif 'Cookie=' in line or 'http-cookie=' in line:
-                     
                       cookie_match = re.search(r'(?:Cookie=|http-cookie=)(__hdnea__=[^&\"]+)', line, re.IGNORECASE)
                       if cookie_match:
                           current_cookie = cookie_match.group(1)
@@ -75,9 +71,7 @@ jobs:
                   elif line.startswith('http'):
                       mpd_url = line
                       
-                    
                       if 'jiotvmblive.cdn.jio.com' in mpd_url:
-                          # যদি কুকি ওপরের লাইনে না পাওয়া যায়, তবে এমপিডি লিংক থেকে খোঁজা
                           cookie_val = current_cookie
                           if not cookie_val and '__hdnea__=' in mpd_url:
                               match_hd = re.search(r'(__hdnea__=[^&\s]+)', mpd_url)
@@ -94,16 +88,25 @@ jobs:
                           }
                           channels.append(channel_entry)
                       
-                      # পরবর্তী চ্যানেলের জন্য রিসেট করা
                       current_id = ''
                       current_name = ''
                       current_logo = ''
                       current_clearkey = ''
                       current_cookie = ''
 
+              # 1. JMblive/jmblive.json ফাইল সেভ করা
               with open('JMblive/jmblive.json', 'w', encoding='utf-8') as f:
                   json.dump(channels, f, indent=4, ensure_ascii=False)
-              print(f'Successfully updated JMblive/jmblive.json with {len(channels)} channels')
+
+              # 2. JMblive/cookie.json ফাইল সেভ করা (প্রথম চ্যানেল থেকে কুকি নিয়ে)
+              first_cookie = channels[0]['cookie'] if channels and 'cookie' in channels[0] else ''
+              cookie_data = {
+                  'cookie': first_cookie
+              }
+              with open('JMblive/cookie.json', 'w', encoding='utf-8') as f:
+                  json.dump(cookie_data, f, indent=4, ensure_ascii=False)
+
+              print('Successfully updated JMblive/jmblive.json and JMblive/cookie.json')
           except Exception as e:
               print(f'Error processing M3U data: {e}')
               exit(1)
@@ -113,5 +116,5 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add JMblive/jmblive.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update jmblive.json every 1 hour" && git push)
+          git add JMblive/jmblive.json JMblive/cookie.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update jmblive
