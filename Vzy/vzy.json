@@ -3,7 +3,7 @@
         "id": "9487112",
         "name": "&Pictures HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/75364a7b9f09477b9ee80016a6440b6b/version/0",
-        "clearkey": "dee97058c9594891923f32a744ae9bd2:8f4a78ccebc8b0cca782a3c6c44c732c",
+        "clearkey": "585ec22467d64ede900e1ce0b8de9002:c187585c27705ec2550a83089d124a5e",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/And_Pictures_HD/dash/And_Pictures_HD.mpd"
     },
     {
@@ -45,7 +45,7 @@
         "id": "9624885",
         "name": "Anmol Cinema 2",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/74146d693d6640009a5ed2db2e0c9643/version/0",
-        "clearkey": "f41ce12d8d8c4e7b997bbf53789e5c6f:222f7dfa5fdad99d2f788d97b6f85452",
+        "clearkey": "096911e941114591bd5e2b1ed89d51de:7042a674e930819c3d9d89c503088728",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Anmol_Cinema_2/dash/Anmol_Cinema_2.mpd"
     },
     {
@@ -73,7 +73,7 @@
         "id": "9487081",
         "name": "ET Now",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/81f431adc0714cff84be95b33d9b1b83/version/0",
-        "clearkey": "85bd000e9bb346f582a7790a9e696d57:9b662c36ab419c874466bc72c04fff6b",
+        "clearkey": "2e5127c2be51411d9f1bc0e614ac5857:318061e9da1e7eabcc5dd9f7392db2f1",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/ET_Now/dash/ET_Now.mpd"
     },
     {
@@ -129,126 +129,126 @@
         "id": "9487067",
         "name": "Times Now",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/ff9991eb1ad44ddca1df937a771c583d/version/0",
-        "clearkey": "9a1e711b18fc46c3a96bfb39ddb0a0c1:20b8fdb41d186f74b4b2cb22a5eb256a",
+        "clearkey": "0171d450d40041ceb784c38a86f41043:bd742588f118941765f8ef3dbf63f697",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Times_Now/dash/Times_Now.mpd"
     },
     {
         "id": "9624886",
         "name": "Unite8 Sports 1 HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/396cbd0f0e8d492db65b304859af478d/version/0",
-        "clearkey": "c4db4c03e05c416587d06457b9c9a4cd:3152f6d15b3b1b62132d74c98d2845f2",
+        "clearkey": "d6aae4e243eb4efebb2136bc3c14b526:e185d43f58f43cb1b7d49763a264de5b",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Unite8_Sports_1_HD/dash/Unite8_Sports_1_HD.mpd"
     },
     {
         "id": "9624884",
         "name": "Unite8 Sports 2 HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/03fc75c46d9a4b8daff3ef58d77c5bc7/version/0",
-        "clearkey": "0cecf150bac94acbb07de3221e7cbdaa:21f3df031f8f7db4303d5b1fe3587f97",
+        "clearkey": "735878c7535e40bfae60e93991a627e6:16d16678568f3f5e160996591d041161",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Unite8_Sports_2_HD/dash/Unite8_Sports_2_HD.mpd"
     },
     {
         "id": "9487082",
         "name": "Wion",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/11d3678b209d426688a88adc01830f1d/version/0",
-        "clearkey": "8ac2c870871f4f53866f834b81f61f1d:53a5aafb16e5e7531e5e2bc1f1f5fda5",
+        "clearkey": "08c71671b715426f9c903a3bc16ba1e7:c523038f12a26f3765d9aaf3aeb04374",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Wion/dash/Wion.mpd"
     },
     {
         "id": "9487065",
         "name": "Zee 24 GHANTA",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/4250427f57894b2c904cdd96bbd418ac/version/0",
-        "clearkey": "71f561b5741644bdba634d70e926bed6:0c2df5f971ff7de2b6cabff670ee8873",
+        "clearkey": "d1e29636628d4c65992a08553cc6e8f6:eebdd219d15f0d92bc8f65537aa4361e",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_24_Ghanta/dash/Zee_24_Ghanta.mpd"
     },
     {
         "id": "9487052",
         "name": "Zee Action",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/34108078d7874122b00072cb48a6968a/version/0",
-        "clearkey": "b1d7f31ce857468b91b8ebfe13de0c7e:a85748fed144d26ecfd4b08c1296259b",
+        "clearkey": "091c4cd0d44945c4b1cfa255d9992126:007fb2a9c4eb2ca0004cce26c3184d0e",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Action/dash/Zee_Action.mpd"
     },
     {
         "id": "9487051",
         "name": "Zee Anmol",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/fa440859759342b48006f01bf79df2b6/version/0",
-        "clearkey": "832ec4efb38541cfbec45f5f48a0bb05:63f1ce46e1891e020ae246b287ddd9ea",
+        "clearkey": "a3356cc7779145788d2eec5fdbd9fda7:10d5a7e46ed4eb227a4c48d05fc44eab",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Anmol/dash/Zee_Anmol.mpd"
     },
     {
         "id": "9487057",
         "name": "Zee Anmol Cinema",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/b9a50d8fab3541af81681eb6bd385eaf/version/0",
-        "clearkey": "a253800e7af1450aa941f9bb2f9442ff:cd681d222e958d284396e604bb2bca96",
+        "clearkey": "1dd512f05d1242febd6af6a36cfacd7a:265e50440d63e8a799bf4e1adab16427",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Anmol_Cinema/dash/Zee_Anmol_Cinema.mpd"
     },
     {
         "id": "9504796",
         "name": "Zee Bangla HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/dd74c3cd17ff4baca804bce74b811384/version/0",
-        "clearkey": "aa999a81ca734306865d1bd42696c6d8:d30c4a899ab32b327b20812fa92911ab",
+        "clearkey": "d9edc743b37b4ef2a6d669acb320107d:e6b87e6a7b2758de3a8fcae03a39f74d",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Bangla_HD/dash/Zee_Bangla_HD.mpd"
     },
     {
         "id": "9624894",
         "name": "Zee Bangla Sonar",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f508a6918aac461382774c4a34f50c30/version/0",
-        "clearkey": "cca9a2b34e8043bf90b82e4fca8105b8:b00bb18c9070f2b28f56174c814828da",
+        "clearkey": "526c724dbb4346e793b7dc33be44a090:2692571b474e17747a7b24d884475b06",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/ZEE_Bangla_Sonar/dash/ZEE_Bangla_Sonar.mpd"
     },
     {
         "id": "9624887",
         "name": "Zee Biskope",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/bb424c74bfd54392a86b4a343996b6d5/version/0",
-        "clearkey": "09bed1eaf3b44df8b5be3775a5eb2e8e:0aafc2da68b259b36f54fa5bb0d64737",
+        "clearkey": "05183bcc812240f0aa3f310d2031e38c:27475dfec0ea143339b2e7c4d409c798",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Biskope/dash/Zee_Biskope.mpd"
     },
     {
         "id": "9487104",
         "name": "Zee Bollywood",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/e05e21a01b244152819c56ff0d98e091/version/0",
-        "clearkey": "1d152fbf1afd4f6fb178c2d2a7984e9e:411fa0fedc0f9c5869c20b9318f77088",
+        "clearkey": "7a4a7ca122244d109e2eb7fabcf09411:83b677889e620ea9256923a5e30b7cce",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Bollywood/dash/Zee_Bollywood.mpd"
     },
     {
         "id": "9487096",
         "name": "Zee Cinema HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/d2316f5734094e8486486d6911fe6560/version/0",
-        "clearkey": "49044161aefd4b139d2411f3e0bb4ac5:ff908a6b933875084ce094ba9c82af7d",
+        "clearkey": "edde08f74d7c49438268a52f96122bb6:07aea991073114f7c322a49d4d157407",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Cinema_HD/dash/Zee_Cinema_HD.mpd"
     },
     {
         "id": "9624889",
         "name": "Zee Cinemalu HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/a33211ad359a4cba8b23144e4081ff68/version/0",
-        "clearkey": "a8c04928a72542f186294846302dc129:6e6d5e88d78de366719370bdae226fe7",
+        "clearkey": "b456b90e88684affa771b9ad6df6ebd9:1217f9ee562c8bc1775384366d45cdd7",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Cinemalu_HD/dash/Zee_Cinemalu_HD.mpd"
     },
     {
         "id": "9624882",
         "name": "Zee Classic",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/97ff8066a4d945d0ad72764a1f58762b/version/0",
-        "clearkey": "c521f683ca8c41fcbd5b734da5140e11:9e688fcd8747cbcbeb67cdccb94d8aa0",
+        "clearkey": "c65291daac98438d8ce2ef12cafdcf35:5df06ea2849c5a6c452fea257d9e9cf4",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Classic/dash/Zee_Classic.mpd"
     },
     {
         "id": "9624893",
         "name": "Zee Kannada HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/37b5fbe79db34171a1873cf889458149/version/0",
-        "clearkey": "bf6c1691ab0a40ee9190ea91fac58892:755b86ab10746038131be7f7a4445386",
+        "clearkey": "c3b80f5ec1e04f82bbad5b5f7fbcd396:c9c97889442206eb67b8905632c52aa6",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Kannada_HD/dash/Zee_Kannada_HD.mpd"
     },
     {
         "id": "9624895",
         "name": "Zee Keralam HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/cb2d529482614186a8ba29d47346902b/version/0",
-        "clearkey": "fdecc8053e724bc7b342e29e26f11698:f8fa77984f72da9aec80c269671eb966",
+        "clearkey": "53b62675c0994b6e898c1e858d4897b7:07768ec23f64a6ac3857063edd9c623e",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Keralam_HD/dash/Zee_Keralam_HD.mpd"
     },
     {
         "id": "9504795",
         "name": "Zee Marathi HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/9d03463ae16544f2b87dd2e173b22685/version/0",
-        "clearkey": "0a99dc6b5e4d43939e005cbb976285ad:ed83dbb01367194f33c8fd4954f96aa0",
+        "clearkey": "d6950d4a600b486597859a9aeee5de47:56e77fb479dce4eaf0e7086088a7c6c5",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Marathi_HD/dash/Zee_Marathi_HD.mpd"
     },
     {
@@ -262,7 +262,7 @@
         "id": "9649339",
         "name": "Zee Power",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c3166a46bb1945638c6c62bd2aa8bff5/version/0",
-        "clearkey": "225ccbb4f72640bbabb360e920b6a6be:4bf64d39c4a24591ee8237ba34580a29",
+        "clearkey": "badad9d4467943ce9839b5ac6150d647:524426ad01d792d68a0dfa1559372908",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Power_SD/dash/Zee_Power_SD.mpd"
     },
     {
@@ -276,35 +276,35 @@
         "id": "9487093",
         "name": "Zee Sarthak",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/9e787a13afa1447abde693bf57f7f9db/version/0",
-        "clearkey": "ad5423459491485c8c77ac98d80d1b9e:709108e51588b10233e696650ada4db2",
+        "clearkey": "da1768e8dcf14aa6b44fe3b1bc578226:9840757f82015b4f7723d6d98d27c002",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Sarthak/dash/Zee_Sarthak.mpd"
     },
     {
         "id": "9487089",
         "name": "Zee Talkies HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/8afbf5d35d83410e9ee9597d9645d3be/version/0",
-        "clearkey": "53d6ff4a097d462baad58651248ed68d:d39ed84a9a89805c7490b23c7405fa7b",
+        "clearkey": "37b42ef3385f44cf9b335ee1de032368:35b43b1e8d8a3ef4814faed6de41f1e9",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Talkies_HD/dash/Zee_Talkies_HD.mpd"
     },
     {
         "id": "9624891",
         "name": "Zee Telugu HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/3e8e7c08dedc48ee9ed67fc0bc4ecf76/version/0",
-        "clearkey": "fbffeab8162c4e2ca2dfe1027cd82403:49dfc100d2935290272efc6febf4ffdf",
+        "clearkey": "32dbf3e4e7d5427cb302f09950b9e482:57e03aa62626f015415effce66b49622",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Telugu_HD/dash/Zee_Telugu_HD.mpd"
     },
     {
         "id": "9649000",
         "name": "Zee Thirai",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/cef53bf4b0cd4d79913452f6f645c13f/version/0",
-        "clearkey": "961eea96d89d4678807c5d2de7a9c4d1:b85a0169c79d6e83b89096a0e4e89635",
+        "clearkey": "eb6eee854107488683090ccdc5f207d3:70843a48af3207fc05528b7ce1523d13",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Thirai_SD/dash/Zee_Thirai_SD.mpd"
     },
     {
         "id": "9487083",
         "name": "ZEE TV HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/04bc627420754c2592f21bb6c37d7f41/version/0",
-        "clearkey": "75485a80b3b240bfb65ef7157a755826:cd4b9f78d474a75d25b79cf4efdc5b79",
+        "clearkey": "52b95390dd084c5db9e5c3b863cdf028:6b674ecb1a9b57328606ad1b82d6dc30",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/ZEE_TV_HD/dash/ZEE_TV_HD.mpd"
     },
     {
@@ -318,21 +318,21 @@
         "id": "9650645",
         "name": "Zee Zest",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/d2cc8c4a35c44b0bb21c05185150f4a0/version/0",
-        "clearkey": "5b89c138651a46349624fb274aa2302f:38ecd027377fbcfa170156d4ee7315cd",
+        "clearkey": "4bd1aa8a898342a7ace8dcb59e89067e:1d272ab67662b523bad3fa02408f05bf",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Zest_SD/dash/Zee_Zest_SD.mpd"
     },
     {
         "id": "9487091",
         "name": "Zing",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/8ec419e798e644fca91ae4e11f182a1c/version/0",
-        "clearkey": "5791aecb8f52486f85836c565a114d9e:1e292d7b3f6d1c649e8e7d3123df40d6",
+        "clearkey": "2410969887444a3198a83e40b2de634f:abf8ab024b6b498242224fecb82f9059",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zing/dash/Zing.mpd"
     },
     {
         "id": "9487084",
         "name": "Zoom",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f84de3464c0a4609ac222605bd3b3bfe/version/0",
-        "clearkey": "3a54cd2c1dfd4aa49d2cd8b3a1ccc6f2:4b692bca861d886e46090a92c0726b28",
+        "clearkey": "15cf0dece3a54ffd9af958293e2ea95d:f1d1f1db1defa0d90e550c2221e1c526",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zoom/dash/Zoom.mpd"
     }
 ]
