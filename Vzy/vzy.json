@@ -25,49 +25,42 @@
         "name": "9X Jhakaas",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/1da89d8c25f0491e8ed1a9c1d0b716fb/version/0",
         "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/9X_Jhakaas/hls_fta/9X_Jhakaas.m3u8"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/9X_Jhakaas/hls_fta/9X_Jhakaas.m3u8"
     },
     {
         "id": "9487073",
         "name": "9X Tashan",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/83e396d9b57944daab86fb1dc4fc248e/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/2481ada1cd354fe3a5b6abed499a2191/version/0",
         "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/9X_Tashan/hls_fta/9X_Tashan.m3u8"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/9X_Tashan/hls_fta/9X_Tashan.m3u8"
     },
     {
         "id": "9487071",
         "name": "9XM",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/18981b21fabf41f9832523ad441963f8/version/0",
         "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/9XM/hls_fta/9XM.m3u8"
-    },
-    {
-        "id": "9624885",
-        "name": "Anmol Cinema 2",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/74146d693d6640009a5ed2db2e0c9643/version/0",
-        "clearkey": "a7e053a24dc248438f570561d5ebf2df:19e54b1433c96356b8ec379c3acb9fda",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Anmol_Cinema_2/dash/Anmol_Cinema_2.mpd"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/9XM/hls_fta/9XM.m3u8"
     },
     {
         "id": "9624883",
         "name": "Big Magic",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/a4225f7d32c549638e3c8926a78079e6/version/0",
-        "clearkey": "ed04f3863c2f41f8aff589053e07056a:afa77034e5949d4f59e8b21beadf2df6",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Big_Magic/dash/Big_Magic.mpd"
+        "clearkey": "542abc589b6948aaabb31c8f88db37ae:e17897c0f10d94877171c6929b449d75",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Big_Magic/dash/Big_Magic.mpd"
     },
     {
         "id": "9487060",
         "name": "DD Bharti",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/9ac9516189654175bffc220b723e928d/version/0",
         "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/DD_Bharti/hls_fta/DD_Bharti.m3u8"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/DD_Bharti/hls_fta/DD_Bharti.m3u8"
     },
     {
         "id": "9487068",
         "name": "DD National",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/28b8bef7e39548d0ab6ab86d4bbb5e88/version/0",
         "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/DD_National/hls_fta/DD_National.m3u8"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/DD_National/hls_fta/DD_National.m3u8"
     },
     {
         "id": "9487081",
@@ -81,7 +74,7 @@
         "name": "Fakt Marathi",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/a924cd82e1d44b9cad4a6f62daee5126/version/0",
         "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Fakt_Marathi/hls_fta/Fakt_Marathi.m3u8"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Fakt_Marathi/hls_fta/Fakt_Marathi.m3u8"
     },
     {
         "id": "9487063",
@@ -95,14 +88,14 @@
         "name": "News Nation",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/9c50bb3d0a9341a1a631f1423591afef/version/0",
         "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/News_Nation/hls_fta/News_Nation.m3u8"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/News_Nation/hls_fta/News_Nation.m3u8"
     },
     {
         "id": "9487053",
         "name": "Sangeet Bangla",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/ebd2edebccb641a58ae57956dd4ccfb8/version/0",
         "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Sangeet_Bangla/hls_fta/Sangeet_Bangla.m3u8"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Sangeet_Bangla/hls_fta/Sangeet_Bangla.m3u8"
     },
     {
         "id": "9487059",
@@ -123,7 +116,7 @@
         "name": "Sansad TV SD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/599cdaeda82a49bda2daf6f649eb2065/version/0",
         "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Sansad_TV_SD/hls_fta/Sansad_TV_SD.m3u8"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Sansad_TV_SD/dash_fta/Sansad_TV_SD.mpd"
     },
     {
         "id": "9487067",
@@ -147,39 +140,25 @@
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Unite8_Sports_2_HD/dash/Unite8_Sports_2_HD.mpd"
     },
     {
-        "id": "9487082",
-        "name": "Wion",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/11d3678b209d426688a88adc01830f1d/version/0",
-        "clearkey": "a049783cc4a14c5ba295f7e00c8cba0f:8a9b8e6aa7857a8e48e29856fbc1db17",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Wion/dash/Wion.mpd"
-    },
-    {
         "id": "9487065",
         "name": "Zee 24 GHANTA",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/4250427f57894b2c904cdd96bbd418ac/version/0",
-        "clearkey": "f80ab173a21c4a3381b8041c3bfcf3ac:50f59dc30de56db5d2bfc4905cdb129c",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_24_Ghanta/dash/Zee_24_Ghanta.mpd"
+        "clearkey": "6c4f87dbfb234205832c4da9ac8fa54c:988838b04c48ae54588915ca764d089d",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Twenty_Four_Ghanta/dash/Zee_Twenty_Four_Ghanta.mpd"
     },
     {
         "id": "9487052",
         "name": "Zee Action",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/34108078d7874122b00072cb48a6968a/version/0",
-        "clearkey": "abba957e48bc4119bbe46e4c8742d221:f10c518c1d0c7636c5012de1d1b1e335",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Action/dash/Zee_Action.mpd"
-    },
-    {
-        "id": "9487051",
-        "name": "Zee Anmol",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/fa440859759342b48006f01bf79df2b6/version/0",
-        "clearkey": "d9dcaee0956240ce8bef61f033441470:0df65f8ea17c4598a71f14fa25174b2b",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Anmol/dash/Zee_Anmol.mpd"
+        "clearkey": "92faeaebb47e40639c23a4252194a387:8c992c9fd80ebe27a60cff383b1988e1",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Action/dash/Zee_Action.mpd"
     },
     {
         "id": "9487057",
         "name": "Zee Anmol Cinema",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/b9a50d8fab3541af81681eb6bd385eaf/version/0",
-        "clearkey": "1d383c779c40452c83d0b014f26a3681:74a1848313c43b28555251bff219bc02",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Anmol_Cinema/dash/Zee_Anmol_Cinema.mpd"
+        "clearkey": "e8e61d1c9a5d4ff19344e83890d0e6a9:74202efe917fa841746196698f85fcc1",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Anmol_Cinema/dash/Zee_Anmol_Cinema.mpd"
     },
     {
         "id": "9504796",
@@ -206,8 +185,8 @@
         "id": "9487104",
         "name": "Zee Bollywood",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/e1de996d54864c78b8daf60d63974223/version/0",
-        "clearkey": "5502ea8df2c6406bb5f42b5fb9e94a75:5d5aa8dc7a0ad1ac3105312d90c7cdb5",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Bollywood/dash/Zee_Bollywood.mpd"
+        "clearkey": "f4d58e1ee71343c6a40ec69afc534ec7:b64e518ab29725b58c34c5e9f830b9b5",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Bollywood/dash/Zee_Bollywood.mpd"
     },
     {
         "id": "9487096",
@@ -222,13 +201,6 @@
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/a33211ad359a4cba8b23144e4081ff68/version/0",
         "clearkey": "68001251c7e142c78ca3a10d6f37fc6c:ae05520f6215bf45293868d846d9fac8",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Cinemalu_HD/dash/Zee_Cinemalu_HD.mpd"
-    },
-    {
-        "id": "9624882",
-        "name": "Zee Classic",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/97ff8066a4d945d0ad72764a1f58762b/version/0",
-        "clearkey": "ac15851c2c5e43ceb22037d8d7f2cceb:4489fd9ea4a3b17985e0c4c3d6ab04a3",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Classic/dash/Zee_Classic.mpd"
     },
     {
         "id": "9624893",
@@ -252,18 +224,11 @@
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Marathi_HD/dash/Zee_Marathi_HD.mpd"
     },
     {
-        "id": "9487055",
-        "name": "Zee News",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/087a098c826c480796c1e9ac0ade0d82/version/0",
-        "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_News/hls_fta/Zee_News.m3u8"
-    },
-    {
         "id": "9649339",
         "name": "Zee Power",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c3166a46bb1945638c6c62bd2aa8bff5/version/0",
-        "clearkey": "83e27fa0885b4ffebf66ce98f5631148:ebf39964599bdf9ced9e8b97cf1f49fc",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Power_SD/dash/Zee_Power_SD.mpd"
+        "clearkey": "1217bd34b5524eae85ff1a5c3a8ba01f:e8f5a8633596e6e76cb991f83e32fbce",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Power/dash/Zee_Power.mpd"
     },
     {
         "id": "9624890",
@@ -271,13 +236,6 @@
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/600751eb0b714c9992c92d8bfc78e814/version/0",
         "clearkey": "abc0fd8d43c946ef826e36fb5aa13742:222cb6950dcc21ff27572f5f7fdf1306",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/ZEE_PUNJABI/dash/ZEE_PUNJABI.mpd"
-    },
-    {
-        "id": "9487093",
-        "name": "Zee Sarthak",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/9e787a13afa1447abde693bf57f7f9db/version/0",
-        "clearkey": "f5916cb7a95c428b874c12f187188d97:c96abc7ac7ef77198e60facf8fac6fde",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Sarthak/dash/Zee_Sarthak.mpd"
     },
     {
         "id": "9487089",
@@ -308,25 +266,18 @@
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/ZEE_TV_HD/dash/ZEE_TV_HD.mpd"
     },
     {
-        "id": "9624888",
-        "name": "Zee Yuva",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/4c0723e870914be8b9e77207a96227cd/version/0",
-        "clearkey": "8cd380bd638847d5a4cfb19c1227c7ed:6f7cae9204c43940622b5017f22faf78",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/ZEE_YUVA/dash/ZEE_YUVA.mpd"
-    },
-    {
         "id": "9650645",
         "name": "Zee Zest",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/d2cc8c4a35c44b0bb21c05185150f4a0/version/0",
-        "clearkey": "265e576b41b045e798ee37240e69f467:1fc578975011e068b998416777196b2e",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Zest_SD/dash/Zee_Zest_SD.mpd"
+        "clearkey": "e84f6369df094530bde165e64e6481b5:ac35c5c5062c14fb4c10402ff592f6f6",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Zest_SD/dash/Zee_Zest_SD.mpd"
     },
     {
         "id": "9487091",
         "name": "Zing",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/8ec419e798e644fca91ae4e11f182a1c/version/0",
-        "clearkey": "f7cecb81b1334490ab5b916bb480ab18:0ba63253f143b3069fc47b051dc8f207",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zing/dash/Zing.mpd"
+        "clearkey": "269a88d95acb4dafa0a65217ea3a0fb9:1ffd9e13c982445c66aa15242bc9052a",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zing/dash/Zing.mpd"
     },
     {
         "id": "9487084",
