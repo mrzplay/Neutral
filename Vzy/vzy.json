@@ -178,8 +178,8 @@
         "id": "9624894",
         "name": "Zee Bangla Sonar",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f508a6918aac461382774c4a34f50c30/version/0",
-        "clearkey": "58319e79c4a2462b86c5d0b2573bab0f:d69895aef355b7257d7107d927a210b2",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/ZEE_Bangla_Sonar/dash/ZEE_Bangla_Sonar.mpd"
+        "clearkey": "3f93948960a34e839f79a5a7fe83ca84:bab08b54af4942e10884f745c5ecd183",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Bangla_Cinema/dash/Zee_Bangla_Cinema.mpd"
     },
     {
         "id": "9624887",
@@ -289,7 +289,7 @@
     {
         "id": "9649000",
         "name": "Zee Thirai",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/cef53bf4b0cd4d79913452f6f645c13f/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/52a61ca3a8d0466492b16fe324dfe66c/version/0",
         "clearkey": "eefaf50b163b4623be18bae836e3384f:3c19d51c456e4b14730b839d454ec2eb",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Thirai_SD/dash/Zee_Thirai_SD.mpd"
     },
