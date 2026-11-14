@@ -100,7 +100,7 @@
     {
         "id": "9487053",
         "name": "Sangeet Bangla",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/70edc2134d4f420ebc014b1f3bc7e09e/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/ebd2edebccb641a58ae57956dd4ccfb8/version/0",
         "clearkey": "",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Sangeet_Bangla/hls_fta/Sangeet_Bangla.m3u8"
     },
@@ -275,7 +275,7 @@
     {
         "id": "9487093",
         "name": "Zee Sarthak",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/9e787a13afa1447abde693bf57f7f9db/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c86007cd6db744eeb8b6f8431e4f363a/version/0",
         "clearkey": "7470509286734594893f5c8dc3cff239:a2d290d395a75226f90e7408be528c26",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Sarthak/dash/Zee_Sarthak.mpd"
     },
