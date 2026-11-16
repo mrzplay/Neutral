@@ -45,7 +45,7 @@
         "id": "9624885",
         "name": "Anmol Cinema 2",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/dcf4c8f28821488c8974932036e10394/version/0",
-        "clearkey": "f23137a7f4f047b3bd43ae89f40a1c88:410a2054ef8bbfc22b04a0bdbd9c2c1d",
+        "clearkey": "0c6fe95e69c640d694d977deec2ad274:3b71ffcb0a15540618c017efa089d0eb",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Anmol_Cinema_2/dash/Anmol_Cinema_2.mpd"
     },
     {
@@ -164,7 +164,7 @@
         "id": "9487052",
         "name": "Zee Action",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/34108078d7874122b00072cb48a6968a/version/0",
-        "clearkey": "9b31d75c5fb74d46b27ee9da02e1058f:67eca1f7ffc9420c2d551c56273a9ecd",
+        "clearkey": "3c00476d79184f869b6ea5c526efc40c:caac83b94255dcc77ff25454206aae42",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Action/dash/Zee_Action.mpd"
     },
     {
@@ -262,7 +262,7 @@
         "id": "9649339",
         "name": "Zee Power",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c3166a46bb1945638c6c62bd2aa8bff5/version/0",
-        "clearkey": "d86d79822a884b50afe3d1321a593477:df13163d722add2997398e4922766c0f",
+        "clearkey": "233f50c47e394904b4e7248e9d3fc758:f19c4ed915199943fe919c9533562808",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Power/dash/Zee_Power.mpd"
     },
     {
