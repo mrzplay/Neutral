@@ -58,7 +58,7 @@
     {
         "id": "9487060",
         "name": "DD Bharti",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/9ac9516189654175bffc220b723e928d/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/aa28f872001347398405b24f3bd4f634/version/0",
         "clearkey": "",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/DD_Bharti/hls_fta/DD_Bharti.m3u8"
     },
@@ -124,13 +124,6 @@
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/599cdaeda82a49bda2daf6f649eb2065/version/0",
         "clearkey": "",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Sansad_TV_SD/dash_fta/Sansad_TV_SD.mpd"
-    },
-    {
-        "id": "9487067",
-        "name": "Times Now",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/ff9991eb1ad44ddca1df937a771c583d/version/0",
-        "clearkey": "d40d7c608cae429dab14a8d5ffd960f1:a2fe08e2919b63160f535b8b4bf16ca4",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Times_Now/dash/Times_Now.mpd"
     },
     {
         "id": "9624886",
@@ -199,8 +192,8 @@
         "id": "9624887",
         "name": "Zee Biskope",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/bb424c74bfd54392a86b4a343996b6d5/version/0",
-        "clearkey": "2ba4b8523f434bff912388348be73c7a:21babfce6bab823c28b7cd41e7151237",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Biskope/dash/Zee_Biskope.mpd"
+        "clearkey": "2b8cf319e3ea4bf2a253e3dd09b6ee13:16905fc0f5ee6f1b0126a3f5fa16c2b8",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Biskope/dash/Zee_Biskope.mpd"
     },
     {
         "id": "9487104",
@@ -261,7 +254,7 @@
     {
         "id": "9649339",
         "name": "Zee Power",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/d048d81770964b929d4dc3b32a2cc903/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c3166a46bb1945638c6c62bd2aa8bff5/version/0",
         "clearkey": "233f50c47e394904b4e7248e9d3fc758:f19c4ed915199943fe919c9533562808",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Power/dash/Zee_Power.mpd"
     },
@@ -297,15 +290,15 @@
         "id": "9624891",
         "name": "Zee Telugu HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/3e8e7c08dedc48ee9ed67fc0bc4ecf76/version/0",
-        "clearkey": "9fc5407c01bf41e3a23ea63ea6895cb0:d999e747ab24f3429ecc6f6fcd5e84b6",
+        "clearkey": "9fc5407c01bf41e3a23ea63ea6895cb0:3af0234f3a21dfad12ea8a12a5886747",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/ZEE_Telugu_HD/dash/ZEE_Telugu_HD.mpd"
     },
     {
         "id": "9649000",
         "name": "Zee Thirai",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/cef53bf4b0cd4d79913452f6f645c13f/version/0",
-        "clearkey": "b2bd4417b5ab43849bc0c21f64ad968c:278f356d30c7201fb122286f5f7a6727",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Thirai_SD/dash/Zee_Thirai_SD.mpd"
+        "clearkey": "eb6e4e52f002474ea787ae36a9faa25c:6be9d6ab538c5d7e39ec4bf82b17b354",
+        "mpd": "httpS://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Thirai_SD/dash/Zee_Thirai_SD.mpd"
     },
     {
         "id": "9487083",
@@ -327,6 +320,13 @@
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/d2cc8c4a35c44b0bb21c05185150f4a0/version/0",
         "clearkey": "5fad275d88bb4f6a96faa8589b7bae4e:b56b08eef2c57b6da6f53d52f7c63399",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Zest_SD/dash/Zee_Zest_SD.mpd"
+    },
+    {
+        "id": "9487091",
+        "name": "Zing",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/8ec419e798e644fca91ae4e11f182a1c/version/0",
+        "clearkey": "896e24e6cf4942c3a3d5675ee1a08613:4a365029d5b88ff5d4002f984c4fca97",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zing/dash/Zing.mpd"
     },
     {
         "id": "9487084",
