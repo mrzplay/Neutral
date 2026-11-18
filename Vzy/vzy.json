@@ -128,7 +128,7 @@
     {
         "id": "9487067",
         "name": "Times Now",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/ff9991eb1ad44ddca1df937a771c583d/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/162d960506c64575affc1c4825c3ae75/version/0",
         "clearkey": "d40d7c608cae429dab14a8d5ffd960f1:a2fe08e2919b63160f535b8b4bf16ca4",
         "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Times_Now/dash/Times_Now.mpd"
     },
@@ -275,7 +275,7 @@
     {
         "id": "9487093",
         "name": "Zee Sarthak",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/9e787a13afa1447abde693bf57f7f9db/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c86007cd6db744eeb8b6f8431e4f363a/version/0",
         "clearkey": "07ef79632b6d4ce984183c49ce94fd1b:2f4aefaf6016f47d06eda6410ef00e96",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Sarthak/dash/Zee_Sarthak.mpd"
     },
@@ -320,13 +320,6 @@
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/4c0723e870914be8b9e77207a96227cd/version/0",
         "clearkey": "d0bc7508cea14ff78c342a4b43de9d13:c26be55c92cf6c483dd3ef54b1960090",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Yuva/dash/Zee_Yuva.mpd"
-    },
-    {
-        "id": "9650645",
-        "name": "Zee Zest",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/d2cc8c4a35c44b0bb21c05185150f4a0/version/0",
-        "clearkey": "5fad275d88bb4f6a96faa8589b7bae4e:b56b08eef2c57b6da6f53d52f7c63399",
-        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Zest_SD/dash/Zee_Zest_SD.mpd"
     },
     {
         "id": "9487091",
