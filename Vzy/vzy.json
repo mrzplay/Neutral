@@ -70,6 +70,13 @@
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/DD_National/hls_fta/DD_National.m3u8"
     },
     {
+        "id": "9487081",
+        "name": "ET Now",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/81f431adc0714cff84be95b33d9b1b83/version/0",
+        "clearkey": "1b5b994b14bb4de5950e58276052f3aa:c2112f545ec02afbeaef588701eef389",
+        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/ET_Now/dash/ET_Now.mpd"
+    },
+    {
         "id": "9487064",
         "name": "Fakt Marathi",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/a924cd82e1d44b9cad4a6f62daee5126/version/0",
@@ -105,18 +112,25 @@
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Sangeet_Bhojpuri/hls_fta/Sangeet_Bhojpuri.m3u8"
     },
     {
-        "id": "9487058",
-        "name": "Sansad TV HD",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f6ace40e05bd435184b232ca5d67fc62/version/0",
-        "clearkey": "",
-        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Sansad_TV_HD/hls_fta/Sansad_TV_HD.m3u8"
-    },
-    {
         "id": "9487056",
-        "name": "Sansad TV SD",
+        "name": "Sansad TV 1",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/599cdaeda82a49bda2daf6f649eb2065/version/0",
         "clearkey": "",
-        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Sansad_TV_SD/dash_fta/Sansad_TV_SD.mpd"
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Sansad_TV_HD/hls_fta/Sansad_TV_HD.m3u8"
+    },
+    {
+        "id": "9487058",
+        "name": "Sansad TV 2",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f6ace40e05bd435184b232ca5d67fc62/version/0",
+        "clearkey": "",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Sansad_TV_2_HD/hls_fta/Sansad_TV_2_HD.m3u8"
+    },
+    {
+        "id": "9487067",
+        "name": "Times Now",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/162d960506c64575affc1c4825c3ae75/version/0",
+        "clearkey": "d40d7c608cae429dab14a8d5ffd960f1:a2fe08e2919b63160f535b8b4bf16ca4",
+        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Times_Now/dash/Times_Now.mpd"
     },
     {
         "id": "9624886",
@@ -320,5 +334,12 @@
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/8ec419e798e644fca91ae4e11f182a1c/version/0",
         "clearkey": "6ab9c469b4e0495086592d7881691d5d:922bf08bd538c92cd8cc5bd4d1f9a30d",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zing/dash/Zing.mpd"
+    },
+    {
+        "id": "9487084",
+        "name": "Zoom",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f84de3464c0a4609ac222605bd3b3bfe/version/0",
+        "clearkey": "07b6a48d3a094539af45382c1b748bd3:326ce2fd8f8cdae580c9776af2e702ec",
+        "mpd": "https://d2o8pibksxtln6.cloudfront.net/live/media/Zoom/dash/Zoom.mpd"
     }
 ]
