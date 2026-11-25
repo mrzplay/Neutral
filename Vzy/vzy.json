@@ -70,6 +70,13 @@
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/DD_National/hls_fta/DD_National.m3u8"
     },
     {
+        "id": "9487081",
+        "name": "ET Now",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/81f431adc0714cff84be95b33d9b1b83/version/0",
+        "clearkey": "9bbc6c5c660f4728b7c45732c74d59b8:a8c0d9e7d89e80a208be583dcfde0f1a",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/ET_Now/dash/ET_Now.mpd"
+    },
+    {
         "id": "9487064",
         "name": "Fakt Marathi",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/a924cd82e1d44b9cad4a6f62daee5126/version/0",
@@ -135,7 +142,7 @@
     {
         "id": "9487082",
         "name": "Wion",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/11d3678b209d426688a88adc01830f1d/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/938610751fea47dbbaa97beae47fdc12/version/0",
         "clearkey": "a476d1e9283e46d79e0506bd14674f4f:cea6296f1f63496f91e67ee3278ee65b",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Wion/dash/Wion.mpd"
     },
@@ -362,5 +369,12 @@
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/8ec419e798e644fca91ae4e11f182a1c/version/0",
         "clearkey": "f89934a1c38c4747a6c2e60d5fb2dddb:444c2fa3f13674e7ae076317e75b95e3",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zing/dash/Zing.mpd"
+    },
+    {
+        "id": "9487084",
+        "name": "Zoom",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f84de3464c0a4609ac222605bd3b3bfe/version/0",
+        "clearkey": "55677a7c30dc40299cf5f030151feb5f:0b7e42fbb8299488ed0236a2e2334b07",
+        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zoom/dash/Zoom.mpd"
     }
 ]
