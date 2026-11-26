@@ -129,7 +129,7 @@
         "id": "9624886",
         "name": "Unite8 Sports 1 HD",
         "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/396cbd0f0e8d492db65b304859af478d/version/0",
-        "clearkey": "91f5211b3df24094acba29bbe937c97f:883acc4b6347335a5293e54e28e916a0",
+        "clearkey": "91f5211b3df24094acba29bbe937c97f:5c78d3ce4a52959e59603d0ee311cfc7",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Unite8_Sports_1_HD/dash/Unite8_Sports_1_HD.mpd"
     },
     {
@@ -184,7 +184,7 @@
     {
         "id": "9624894",
         "name": "Zee Bangla Sonar",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f508a6918aac461382774c4a34f50c30/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/32b8cfb6cafe43a493a8ecb19de99128/version/0",
         "clearkey": "bfff7aa9f06042b5bac5ac75b9191b1a:57e9a8953be18a131e4c1709887837ce",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Bangla_Cinema/dash/Zee_Bangla_Cinema.mpd"
     },
@@ -205,7 +205,7 @@
     {
         "id": "9624887",
         "name": "Zee Biskope",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/097a839840ae4dd3acde3233b9a05a78/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/bb424c74bfd54392a86b4a343996b6d5/version/0",
         "clearkey": "51897fbaec3940a3baa0c0a0aff11583:6f2be325e7d11a06a49feb835440d401",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Biskope/dash/Zee_Biskope.mpd"
     },
@@ -226,7 +226,7 @@
     {
         "id": "9487096",
         "name": "Zee Cinema HD",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/d2316f5734094e8486486d6911fe6560/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c91e031d66e1443a9412978290a260db/version/0",
         "clearkey": "075b09373fbe44959ad7247b4a63c64b:75444c1246592f07fc7f094d557f4afb",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Cinema_HD/dash/Zee_Cinema_HD.mpd"
     },
