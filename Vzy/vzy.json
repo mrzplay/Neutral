@@ -37,7 +37,7 @@
     {
         "id": "9487071",
         "name": "9XM",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/18981b21fabf41f9832523ad441963f8/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c3a2368776534f61b3f76712af00c113/version/0",
         "clearkey": "",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/9XM/hls_fta/9XM.m3u8"
     },
@@ -184,7 +184,7 @@
     {
         "id": "9624894",
         "name": "Zee Bangla Sonar",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/32b8cfb6cafe43a493a8ecb19de99128/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/f508a6918aac461382774c4a34f50c30/version/0",
         "clearkey": "ab368b801a0243ebbf84673e32d5a3a7:fcaf0c51ef5a83b67382d44a2d9e73c4",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Bangla_Cinema/dash/Zee_Bangla_Cinema.mpd"
     },
@@ -226,7 +226,7 @@
     {
         "id": "9487096",
         "name": "Zee Cinema HD",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c91e031d66e1443a9412978290a260db/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/d2316f5734094e8486486d6911fe6560/version/0",
         "clearkey": "e3c20781c90943abbea93d50d37941b8:20e139b4d422703f3dff6a5b47a5dc3e",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Cinema_HD/dash/Zee_Cinema_HD.mpd"
     },
@@ -261,7 +261,7 @@
     {
         "id": "9624895",
         "name": "Zee Keralam HD",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/cb2d529482614186a8ba29d47346902b/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/7ef2fad202a04745b29c34c30e27305b/version/0",
         "clearkey": "e4d7c8fb0d0f4271b07eeb78db4e5937:8f7315cd1e7e12dc7276e126a598a727",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Keralam_HD/dash/Zee_Keralam_HD.mpd"
     },
@@ -338,7 +338,7 @@
     {
         "id": "9649000",
         "name": "Zee Thirai",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/cef53bf4b0cd4d79913452f6f645c13f/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/52a61ca3a8d0466492b16fe324dfe66c/version/0",
         "clearkey": "0c9f3ff7800d4c83b2e5b84c2ea9360d:18843b5643ddc9e8de9cb1f99cfa27b0",
         "mpd": "httpS://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Thirai_SD/dash/Zee_Thirai_SD.mpd"
     },
