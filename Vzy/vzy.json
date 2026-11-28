@@ -37,7 +37,7 @@
     {
         "id": "9487071",
         "name": "9XM",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/c3a2368776534f61b3f76712af00c113/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/18981b21fabf41f9832523ad441963f8/version/0",
         "clearkey": "",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/9XM/hls_fta/9XM.m3u8"
     },
@@ -114,7 +114,7 @@
     {
         "id": "9487056",
         "name": "Sansad TV 1",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/599cdaeda82a49bda2daf6f649eb2065/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/ca626f335d7647178e790a05cf1c9ffa/version/0",
         "clearkey": "",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Sansad_TV_HD/hls_fta/Sansad_TV_HD.m3u8"
     },
@@ -177,7 +177,7 @@
     {
         "id": "9504796",
         "name": "Zee Bangla HD",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/dd74c3cd17ff4baca804bce74b811384/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/1828756c935c477bbf35f5d5d556fac8/version/0",
         "clearkey": "fa02f4e0047b412998dd21e4fec4c9ed:d9f17820e690788e718428ff7ede2f87",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Bangla_HD/dash/Zee_Bangla_HD.mpd"
     },
@@ -205,16 +205,9 @@
     {
         "id": "9624887",
         "name": "Zee Biskope",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/bb424c74bfd54392a86b4a343996b6d5/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/097a839840ae4dd3acde3233b9a05a78/version/0",
         "clearkey": "7f86d385e50648efa8dac281dba71561:4694bf17bbb860d2473af7e169be13f5",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Biskope/dash/Zee_Biskope.mpd"
-    },
-    {
-        "id": "9487104",
-        "name": "Zee Bollywood",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/e1de996d54864c78b8daf60d63974223/version/0",
-        "clearkey": "d290f092f7714f2696b713150566e259:098f8ade866e5eda2ff893893d3bd038",
-        "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Bollywood/dash/Zee_Bollywood.mpd"
     },
     {
         "id": "9825964",
@@ -261,7 +254,7 @@
     {
         "id": "9624895",
         "name": "Zee Keralam HD",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/7ef2fad202a04745b29c34c30e27305b/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/cb2d529482614186a8ba29d47346902b/version/0",
         "clearkey": "e4d7c8fb0d0f4271b07eeb78db4e5937:8f7315cd1e7e12dc7276e126a598a727",
         "mpd": "https://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Keralam_HD/dash/Zee_Keralam_HD.mpd"
     },
@@ -338,7 +331,7 @@
     {
         "id": "9649000",
         "name": "Zee Thirai",
-        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/52a61ca3a8d0466492b16fe324dfe66c/version/0",
+        "logo": "https://imagesv2.dsp1.ott.kaltura.com/Service.svc/GetImage/p/5093/entry_id/cef53bf4b0cd4d79913452f6f645c13f/version/0",
         "clearkey": "0c9f3ff7800d4c83b2e5b84c2ea9360d:18843b5643ddc9e8de9cb1f99cfa27b0",
         "mpd": "httpS://d1iwj24qiokrul.cloudfront.net/live/media/Zee_Thirai_SD/dash/Zee_Thirai_SD.mpd"
     },
